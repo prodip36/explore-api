@@ -9,9 +9,10 @@ function showPost(post)
     const postContainer= document.getElementById('post-container');
     for(const data of post){
         const postDiv= document.createElement('div');
+        postDiv.classList.add('post-container-class');
         postDiv.innerHTML= `
         <h4>User- ${data.id}</h4>
-        <h5>Post: ${data.title}<h5>
+        <h5 class"heading">Post: ${data.title}<h5>
         <p>Post Description: ${data.body}</p>
         <br> <br>
         `

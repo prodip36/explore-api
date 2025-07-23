@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
+    <style>
+        .post-container-class{
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            text-align: center;
+            
+        }
+      
+    </style>
 </head>
 <body>
    <header>
@@ -12,8 +23,9 @@
    <main>
     <section>
         <h3>All posts are here</h3>
+        <button onclick="loadPost()">Click here</button>
         <div id="post-container">
-            <button onclick="loadPost()">Click here</button>
+            
         </div>
     </section>
    </main>
